@@ -1,0 +1,181 @@
+/* Modern Styling for Assignment II */
+:root {
+  --primary-maroon: #800000;
+  --bg-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-main: #e0e0e0;
+  --accent-green: #2e7d32;
+  --accent-red: #c62828;
+  --accent-blue: #1976d2;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+}
+
+/* Attractive Header matching image_e10e76.jpg */
+.title {
+  background: linear-gradient(135deg, var(--primary-maroon) 0%, #4a0000 100%);
+  color: white;
+  padding: 30px;
+  margin: 0 -20px 30px -20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 15px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #333;
+}
+
+/* The Main GUI Box */
+.gui-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: #252525;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #444;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.column h3 {
+  color: #fff;
+  border-bottom: 2px solid var(--primary-maroon);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  background: #121212;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: "Courier New", Courier, monospace;
+  resize: none;
+  margin-bottom: 15px;
+  transition: border 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.red-label {
+  color: #ff5252;
+  font-weight: 600;
+  min-width: 120px;
+  text-align: left;
+}
+
+input {
+  flex-grow: 1;
+  background: #121212;
+  border: 1px solid #555;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Styled Buttons */
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.1s,
+    filter 0.2s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+button:hover {
+  filter: brightness(1.2);
+}
+
+.green-btn {
+  background-color: var(--accent-green);
+  color: white;
+}
+.red-btn {
+  background-color: var(--accent-red);
+  color: white;
+}
+.blue-btn {
+  background-color: var(--accent-blue);
+  color: white;
+  width: auto;
+  flex: none;
+  padding: 10px 25px;
+}
+
+/* Footer/Algorithm Selection */
+.footer-row {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+select {
+  padding: 8px 15px;
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #555;
+}
+
+.logout-button {
+  background: transparent;
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+  padding: 5px 15px;
+  width: auto;
+}
+
+.logout-button:hover {
+  background: var(--accent-red);
+  color: white;
+}
